@@ -26,7 +26,8 @@ def sum_sequence3(n):
     return result
 
 
-print('Выбирите последовательность и введите номер, соответствующий нужной послежоватеьлности: \n 1 : 2n-1 \n 2 : 2^n-1 \n 3 : n^3 + 1')
+print('Выбирите последовательность и введите номер, соответствующий нужной последовательности: \n 1 : 2n-1 \n 2 : '
+      '2^n-1 \n 3 : n^3 + 1')
 sequence = str(input())
 
 if 1 > int(sequence) > 3:
@@ -39,11 +40,11 @@ else:
         print('Error')
     else:
         if sequence == '1':
-            print(sum_sequence1(n))
+            print('Результат: %i' % (sum_sequence1(n)))
         elif sequence == '2':
-            print(sum_sequence2(n))
+            print('Результат: %i' % (sum_sequence2(n)))
         elif sequence == '3':
-            print(sum_sequence3(n))
+            print('Результат: %i' % (sum_sequence3(n)))
 
 
 
